@@ -1,0 +1,23 @@
+import Icon from './Icon';
+
+export const ArrowLeft = props => <Icon {...props} name="arrow-Left" />;
+export const ArrowRight = props => <Icon {...props} name="arrow-right" />;
+export const Blade = props => <Icon {...props} name="blade" />;
+export const Calendar = props => <Icon {...props} name="calendar" />;
+export const Call = props => <Icon {...props} name="call" />;
+export const FacialTreatment = props => <Icon {...props} name="facial-treatment" />;
+export const FullScreen = props => <Icon {...props} name="full-screen" />;
+export const HairDye = props => <Icon {...props} name="hair-dye" />;
+export const HairWashSink = props => <Icon {...props} name="hair-wash-sink" />;
+export const Haircut = props => <Icon {...props} name="haircut" />;
+export const Heart = props => <Icon {...props} name="heart" />;
+export const Instagram = props => <Icon {...props} name="instagram" />;
+export const Logo = props => <Icon {...props} name="logo" />;
+export const Massage = props => <Icon {...props} name="massage" />;
+export const Play = props => <Icon {...props} name="play" />;
+export const Quotation = props => <Icon {...props} name="quotation" />;
+export const Scissor = props => <Icon {...props} name="scissor" />;
+export const Search = props => <Icon {...props} name="search" />;
+export const Shaving = props => <Icon {...props} name="shaving" />;
+export const ShoppingCart = props => <Icon {...props} name="shopping-cart" />;
+export const Star = props => <Icon {...props} name="Star" />;

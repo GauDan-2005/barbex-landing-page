@@ -3,21 +3,16 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --font-arima-madurai-solid: "Arima Madurai Solid", sans-serif;
+  --font-arima-madurai-regular: "Arima Madurai Regular", sans-serif;
+  --font-arima-madurai-light: "Arima Madurai Light", sans-serif;
+  --font-arima-madurai-brand: "Arima Madurai Brand", sans-serif;
+  --primary-color: #b48e40;
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  --primary-color: #b48e40;
+  font-family: var(--font-arima-madurai-regular);
 }
 
 @layer utilities {
