@@ -3,9 +3,10 @@ import React from "react";
 interface ButtonProps {
   title: string;
   func?: () => void;
+  className?: string;
 }
 
-const Button: React.FC<ButtonProps> = ({ title, func }) => {
+const Button: React.FC<ButtonProps> = ({ title, func, className }) => {
   return (
     <a
       className={`
@@ -16,11 +17,11 @@ const Button: React.FC<ButtonProps> = ({ title, func }) => {
         after:transition-all after:duration-500
         after:bg-primary-color
         hover:after:inset-full
-        group
+        group ${className}
       `}
       onClick={func}
     >
-      <span className="group-hover:text-primary-color transition-colors duration-500 text-white">
+      <span className="group-hover:text-primary-color transition-colors duration-500 text-white font-black">
         {title}
       </span>
     </a>
