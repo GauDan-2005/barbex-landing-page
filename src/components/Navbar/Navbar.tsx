@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Call, Logo, Search, ShoppingCart, HamburgerIcon } from "@/icons"; // Assume you have a HamburgerIcon component
+import { Call, Logo, Menu, Search, ShoppingCart } from "@/icons"; // Assume you have a Menu component
 import NavDropdown from "../Dropdown/NavDropdown/NavDrowpdown";
 import Button from "../Button/Button";
 
@@ -34,16 +34,20 @@ const Navbar = () => {
     >
       <div className="flex flex-row gap-8 items-center justify-center">
         <Logo />
-        <hr className="bg-white border-0 bg-opacity-10 h-9 w-0.5" />
-        <div className="group flex gap-4 items-center justify-between hover:text-primary-color cursor-pointer transition-all duration-500">
-          <div className=" flex items-center justify-center p-2 border-[1.5px] border-white/20 border-solid group-hover:border-primary-color transition-all duration-500 rounded-full w-10 h-10">
-            <Call
-              size="20"
-              className="fill-white group-hover:fill-primary-color transition-all duration-500"
-            />
-          </div>
-          <p>Hotline +125 (895) 658</p>
-        </div>
+        {isMenuOpen && (
+          <>
+            <hr className="bg-white border-0 bg-opacity-10 h-9 w-0.5" />
+            <div className="group flex gap-4 items-center justify-between hover:text-primary-color cursor-pointer transition-all duration-500">
+              <div className=" flex items-center justify-center p-2 border-[1.5px] border-white/20 border-solid group-hover:border-primary-color transition-all duration-500 rounded-full w-10 h-10">
+                <Call
+                  size="20"
+                  className="fill-white group-hover:fill-primary-color transition-all duration-500"
+                />
+              </div>
+              <p>Hotline +125 (895) 658</p>
+            </div>
+          </>
+        )}
       </div>
 
       {/* Desktop Menu */}
@@ -90,7 +94,7 @@ const Navbar = () => {
           className="text-white hover:text-primary-color transition-all duration-500"
           onClick={() => setIsMenuOpen(!isMenuOpen)}
         >
-          <HamburgerIcon /> {/* Assuming HamburgerIcon is a component */}
+          <Menu /> {/* Assuming Menu is a component */}
         </button>
       </div>
 

@@ -15,6 +15,7 @@ export const Heart = props => <Icon {...props} name="heart" />;
 export const Instagram = props => <Icon {...props} name="instagram" />;
 export const Logo = props => <Icon {...props} name="logo" />;
 export const Massage = props => <Icon {...props} name="massage" />;
+export const Menu = props => <Icon {...props} name="menu" />;
 export const Play = props => <Icon {...props} name="play" />;
 export const Quotation = props => <Icon {...props} name="quotation" />;
 export const Scissor = props => <Icon {...props} name="scissor" />;

@@ -13,6 +13,7 @@ import Heart from './heart.svg';
 import Instagram from './instagram.svg';
 import Logo from './logo.svg';
 import Massage from './massage.svg';
+import Menu from './menu.svg';
 import Play from './play.svg';
 import Quotation from './quotation.svg';
 import Scissor from './scissor.svg';
@@ -43,6 +44,7 @@ export default {
 "instagram": Instagram, 
 "logo": Logo, 
 "massage": Massage, 
+"menu": Menu, 
 "play": Play, 
 "quotation": Quotation, 
 "scissor": Scissor, 
