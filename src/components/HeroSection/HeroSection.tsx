@@ -1,9 +1,8 @@
 import Button from "../Button/Button";
 
 import heroImg1 from "../../assets/banner-1.png";
-import heroImg2 from "../../assets/banner-2.png";
 import heroBgImg1 from "../../assets/banner-bg-1.jpg";
-import heroBgImg2 from "../../assets/banner-bg-2.jpg";
+
 import Image from "next/image";
 import { ArrowLeft, ArrowRight } from "@/icons";
 
