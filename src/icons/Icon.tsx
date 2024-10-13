@@ -4,7 +4,25 @@ import IconMap from "./assets/IconMap";
 
 const EmptyIcon = () => <div />;
 
-const Icon = ({ name, size, color, hoverColor, cursor, ...rest }) => {
+type IconMapKeys = keyof typeof IconMap;
+
+type IconProps = {
+  name: IconMapKeys;
+  size?: number;
+  color?: string;
+  hoverColor?: string;
+  cursor?: string;
+  [key: string]: any; // In case there are additional properties
+};
+
+const Icon = ({
+  name,
+  size,
+  color,
+  hoverColor,
+  cursor,
+  ...rest
+}: IconProps) => {
   const [isHovered, setIsHovered] = useState(false); // State for hover
   const Icon = IconMap[name] || EmptyIcon;
 
