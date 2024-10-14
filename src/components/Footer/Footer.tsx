@@ -1,5 +1,5 @@
 import React from "react";
-import Button from "../Button/Button";
+import Button from "../Button/SolidButton";
 import {
   Blade,
   Logo,
@@ -12,14 +12,17 @@ import {
 
 const Footer = () => {
   return (
-    <footer className="flex bg-heading-color text-white pt-48 -mt-24">
-      <div className="flex flex-col gap-32 w-full relative">
-        <Blade fill="white" className="absolute left-20 -top-10" />
-        <div className=" flex justify-between items-center z-10  px-20">
-          <div className="flex flex-col gap-8 items-start justify-center">
+    <footer className="flex bg-heading-color text-white py-8 md:pt-48 mt-20 md:-mt-24">
+      <div className="flex flex-col gap-10 md:gap-32 w-full md:relative ">
+        <Blade fill="white" className="hidden md:absolute left-20 -top-10" />
+        <div className="flex flex-col md:flex-row justify-between items-center z-10 px-4 md:px-20 gap-8">
+          <div className="flex flex-col gap-8 items-center md:items-start justify-center w-full">
             <Logo />
-            <div className="flex items-center justify-between gap-16">
-              <p className="cursor-pointer hover:text-primary-color transition-all duration-500">
+            <div className="flex items-center justify-between md:gap-16 self-stretch md:self-start">
+              <p
+                style={{ fontFamily: "Arima, cursive" }}
+                className="cursor-pointer hover:text-primary-color transition-all duration-500"
+              >
                 Haircut
               </p>
               <p className="cursor-pointer hover:text-primary-color transition-all duration-500">
@@ -37,12 +40,12 @@ const Footer = () => {
             <input
               type="email"
               placeholder="Email Address"
-              className="self-stretch border border-white border-opacity-50 py-5 px-8 bg-transparent text-white outline-none"
+              className="font-arima self-stretch border border-white border-opacity-50 py-2 px-3 md:py-5 md:px-8 bg-transparent text-white outline-none"
             />
             <Button title="SUBSCRIBE" className="self-stretch" />
           </div>
         </div>
-        <div className="flex justify-between items-center gap-12 p-10 border-t-[1px] border-white border-opacity-10  px-20">
+        <div className="flex flex-col-reverse md:flex-row justify-between items-center px-4 gap-12 p-10 border-t-[1px] border-white border-opacity-10  md:px-20">
           <p>
             Copyright &copy; 2022{" "}
             <span className="text-primary-color">ThemeOri</span> Website by

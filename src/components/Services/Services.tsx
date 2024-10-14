@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React, { useState } from "react";
-import Button from "../Button/Button";
+import Button from "../Button/SolidButton";
 import { Check } from "@/icons";
 
 type Props = {
@@ -53,15 +53,15 @@ const Services = (props: Props) => {
       </div>
 
       {/* Active Service Details */}
-      <div className="flex gap-16 items-start justify-center">
+      <div className="flex flex-col md:flex-row gap-16 items-start justify-center">
         {/* Image */}
-        <div className="w-1/2 flex justify-end">
+        <div className="md:w-1/2 flex justify-end">
           <Image src={activeData?.img} alt={activeData?.title} className="" />
         </div>
 
         {/* Service Info */}
-        <div className="w-1/2 flex flex-col gap-8 items-start justify-between">
-          <div className="flex flex-col gap-5">
+        <div className="md:w-1/2 flex flex-col gap-8 items-center md:items-start justify-between text-center md:text-left px-4">
+          <div className="flex flex-col gap-5 ">
             <p className="text-2xl font-bold">{activeData?.title}</p>
             <p className="text-lg text-gray-600 font-normal">
               {activeData?.content}
@@ -73,7 +73,7 @@ const Services = (props: Props) => {
             {activeData?.features.map((feature, idx) => (
               <div
                 key={idx}
-                className="flex items-center justify-start gap-5 text-body-color text-base font-bold"
+                className="flex items-center justify-start gap-5 text-body-color text-base font-bold text-left"
               >
                 <div className="flex items-center justify-center p-2 rounded-full bg-primary-color bg-opacity-20">
                   <Check fill="var(--primary-color)" />

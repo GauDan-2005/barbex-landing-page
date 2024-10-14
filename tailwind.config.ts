@@ -9,6 +9,9 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        arima: ["var(--font-arima)", "cursive"],
+      },
       colors: {
         white: "#FFFFFF",
         "primary-color": "#B48E40",

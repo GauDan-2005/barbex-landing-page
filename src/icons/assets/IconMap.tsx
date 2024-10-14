@@ -11,6 +11,7 @@ import HairWashSink from './hair-wash-sink.svg';
 import Haircut from './haircut.svg';
 import Heart from './heart.svg';
 import Instagram from './instagram.svg';
+import LogoSimple from './logo-simple.svg';
 import Logo from './logo.svg';
 import Massage from './massage.svg';
 import Menu from './menu.svg';
@@ -42,6 +43,7 @@ export default {
 "haircut": Haircut, 
 "heart": Heart, 
 "instagram": Instagram, 
+"logo-simple": LogoSimple, 
 "logo": Logo, 
 "massage": Massage, 
 "menu": Menu, 

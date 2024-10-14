@@ -2,17 +2,23 @@
 @tailwind components;
 @tailwind utilities;
 
+/* font imports */
+@import url("https://fonts.googleapis.com/css2?family=Arima:wght@100..700&display=swap");
+
+/* Add this to your main CSS file */
+/* @import "~slick-carousel/slick/slick.css";
+@import "~slick-carousel/slick/slick-theme.css"; */
+
 :root {
-  --font-arima-madurai-solid: "Arima Madurai Solid", sans-serif;
-  --font-arima-madurai-regular: "Arima Madurai Regular", sans-serif;
-  --font-arima-madurai-light: "Arima Madurai Light", sans-serif;
-  --font-arima-madurai-brand: "Arima Madurai Brand", sans-serif;
   --primary-color: #b48e40;
+  --font-arima: "Arima", sans-serif;
 }
 
 body {
   --primary-color: #b48e40;
-  font-family: var(--font-arima-madurai-regular);
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
 }
 
 @layer utilities {
