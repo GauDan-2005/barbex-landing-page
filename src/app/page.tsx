@@ -24,7 +24,7 @@ import {
 import { Call, Instagram, Play } from "@/icons";
 import BlogCard from "@/components/Card/BlogCard/BlogCard";
 import TestimonialCard from "@/components/Card/TestimonialCard/TestimonialCard";
-import Button from "@/components/Button/SolidButton";
+import Button from "@/components/Button/SolidButton/SolidButton";
 import ProductCard from "@/components/Card/ProductCard/ProductCard";
 import Services from "@/components/Services/Services";
 import { services } from "@/constants/services";

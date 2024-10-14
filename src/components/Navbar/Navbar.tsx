@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { Call, Logo, Menu, Search, ShoppingCart, LogoSimple } from "@/icons"; // Assume you have a Menu component
 import NavDropdown from "../Dropdown/NavDropdown/NavDrowpdown";
-import Button from "../Button/SolidButton";
+import Button from "../Button/SolidButton/SolidButton";
 
 const Navbar = () => {
   const [isAtTop, setIsAtTop] = useState(true);

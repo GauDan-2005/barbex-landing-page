@@ -1,4 +1,3 @@
-import Button from "@/components/Button/SolidButton";
 import { Calendar } from "@/icons";
 import Image from "next/image";
 import React from "react";

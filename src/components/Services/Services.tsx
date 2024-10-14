@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React, { useState } from "react";
-import Button from "../Button/SolidButton";
+import Button from "../Button/SolidButton/SolidButton";
 import { Check } from "@/icons";
 
 type Props = {

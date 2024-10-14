@@ -1,5 +1,5 @@
 import React from "react";
-import Button from "../Button/SolidButton";
+import Button from "../Button/SolidButton/SolidButton";
 import {
   Blade,
   Logo,

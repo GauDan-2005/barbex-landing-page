@@ -1,11 +1,12 @@
-import Button from "../Button/SolidButton";
+import Image from "next/image";
+
+import OulineButton from "../Button/OutlineButton/OutlineButton";
+import Button from "../Button/SolidButton/SolidButton";
 
 import heroImg1 from "../../assets/banner-1.png";
 import heroBgImg1 from "../../assets/banner-bg-1.jpg";
 
-import Image from "next/image";
 import { ArrowLeft, ArrowRight } from "@/icons";
-import OulineButton from "../Button/OutlineButton/OutlineButton";
 
 const HeroSection = () => {
   return (
