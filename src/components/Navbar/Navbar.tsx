@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Call, Logo, Menu, Search, ShoppingCart, LogoSimple } from "@/icons"; // Assume you have a Menu component
+import { Call, Logo, Menu, Search, ShoppingCart } from "@/icons"; // Assume you have a Menu component
 import NavDropdown from "../Dropdown/NavDropdown/NavDrowpdown";
 import Button from "../Button/SolidButton/SolidButton";
 
