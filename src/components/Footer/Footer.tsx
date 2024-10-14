@@ -19,10 +19,7 @@ const Footer = () => {
           <div className="flex flex-col gap-8 items-center md:items-start justify-center w-full">
             <Logo />
             <div className="flex items-center justify-between md:gap-16 self-stretch md:self-start">
-              <p
-                style={{ fontFamily: "Arima, cursive" }}
-                className="cursor-pointer hover:text-primary-color transition-all duration-500"
-              >
+              <p className="cursor-pointer hover:text-primary-color transition-all duration-500">
                 Haircut
               </p>
               <p className="cursor-pointer hover:text-primary-color transition-all duration-500">

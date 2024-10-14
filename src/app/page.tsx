@@ -324,7 +324,7 @@ export default function Home() {
           </div>
         </section>
         <section className="instagram overflow-hidden">
-          <div className="grid grid-cols-1 md:grid-cols-6 gap-2 px-10">
+          <div className="grid grid-cols-1 md:grid-cols-6 gap-6 md:gap-2 px-10">
             {Object.keys(instagramImages).map((key, index) => (
               <div
                 key={index}
